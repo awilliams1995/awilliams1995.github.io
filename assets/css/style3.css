@@ -1,0 +1,92 @@
+img{
+margin-bottom: 15px;
+
+}
+
+
+.parenttable{
+	display:relative;
+}
+.childtable{
+	display:table-row ;
+	position:relative;
+	top:15px;
+	display:block!important;
+}
+
+
+body{
+	min-height: 100vh;
+	height:auto;
+	background-image: url("../images/vintage-leaves.png");
+	position: relative;
+}
+.footer{
+	position: absolute;
+display:table;
+height:10%;
+min-height:96.3px;
+background:#666666;
+width:100%;
+border-top-style:solid;
+border-top-color:#4aaaa5;
+border-width: 10px;
+bottom:0px;
+}
+.copyright{
+display:table-cell;
+vertical-align: middle;
+width:auto;
+height:100%;
+text-align:center;
+}
+
+.headercolor{
+font-size:3em;
+background:#4aaaa5;
+padding:10px;
+}
+
+.headercolor2{
+font-size:24px;
+}
+
+.smallimage{
+display: inline-block;
+width:50px;
+height:auto;
+}
+.smallimage2{
+height:auto;
+width:100%;
+}
+.andrewphoto{
+	height:200px;
+	width:auto;
+	margin-right: 5px;
+	display:inline-block;
+	float:left;
+}
+#text{
+	display:inline;
+}
+
+@media screen and (max-width:767px) {
+
+ li{
+ 	display:inline-block !important;
+ }
+ul{
+	text-align: center;
+}
+h1{
+	text-align: left;
+}
+
+.parenttable{
+	display:static;
+}
+.childtable{
+	position: static;
+	display:block!important;
+}
