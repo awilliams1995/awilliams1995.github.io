@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Game</title>
+		 <link rel="stylesheet" href="assets/css/reset.css">
+	 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		 <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--this is the dead face emoji that wil be called on if the player loses-->
+<img id ="hideDead" src="https://images.vexels.com/media/users/3/134499/isolated/preview/15919ef0465bf8c31fbc307d9b20f1a9-dead-emoji-emoticon-by-vexels.png" alt="dead">
+<h1>Star Wars Game</h1>
+<span>your hp: </span><span id="yourhp"></span><br>
+<span>your attack: </span><span id="yourattack"></span><br>
+<span>enemy hp: </span><span id="enemyhp"></span><br>
+<span>enemy attack: </span><span id="enemyattack"></span><br>
+<iframe id="hide" src="https://giphy.com/embed/8IZCR0wzEIQms" width="480" height="324" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<br>
+<br>
+
+<div id="character">
+<!--Obi One Button-->
+<div class="btn btn-danger characters"   id="ObiOne" value="1800" data-attack="40" data-counter="250" >Obi One:1800</div>
+<!--Darth Vader Button-->
+<div class="btn btn-danger characters"  id="DarthVader"  value="1200" data-attack="80" data-counter="200" >Darth Vader:1200</div>
+
+<!--Yoda Button-->
+<div class="btn btn-danger characters"  id="Yoda"  value="1500" data-attack="70" data-counter="150" >Yoda:1500</div>
+<!--Anakin Button-->
+<div class="btn btn-danger characters"  id="AnakinSkyWalker"  value="2000" data-attack="50" data-counter="100" >Anakin SkyWalker:2000</div>
+</div>
+
+	<h2>Enemies Available to attack</h2>
+<div id="enemies">
+
+</div>
+<br>
+<!--Attack Button-->
+<button id="attack">Attack</button>
+<h1>Defenders</h1>
+<!--this is where all the pending enemies will go-->
+<div id="defenders">
+	
+</div>
+<br>
+<button id="reset">Reset</button>
+<br>
+<!--place where the character photos will go-->
+<div id="characterVisuals" class="row">
+<!--yoga photo-->
+<div class="Yoda col-offset-2 col xs-4 ">
+
+<img src="http://static.srcdn.com/wp-content/uploads/Yoda-Star-Wars-7-Force-Awakens-Scene-Frank-Oz.jpg" alt="Yoda">
+
+</div>
+<!--Obi One photo-->
+<div class="ObiOne col-offset-2 col xs-4 ">
+
+<img src="https://static1.squarespace.com/static/53323bb4e4b0cebc6a28ffa2/t/58d0d22adb29d660e47a70bb/1490080298909/IMG_0368.JPG" alt="Obi One">
+
+</div>
+<!--DarthVader photo-->
+<div class="DarthVader col-offset-2 col xs-4 ">
+
+<img src="http://static.srcdn.com/wp-content/uploads/Darth-Vader-Rogue-One-details.jpg" alt="Darth Vader">
+
+</div>
+<!--Anakin Skywalker photo-->
+<div class="AnakinSkyWalker col-offset-2 col xs-4 ">
+
+<img src="http://static.srcdn.com/wp-content/uploads/Hayden-Christensen-Star-Wars-Episode-8-Anakin-Skywalker-Ghost.jpg" alt="Anakin SkyWalker">
+
+</div>
+</div>
+ <script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
